@@ -1,7 +1,8 @@
-Package: RODBCDBI
+Package: RIBMDBDBI
 Type: Package
 Version: 0.1.1
 Authors@R: c(
+person("Rocket", "Software", , "bkumar@rocketsoftware.com", c("aut", "cre")),
   person("Nagi", "Teramo", , "teramonagi@gmail.com", c("aut", "cre")),
   person("Shinichi", "Takayanagi", , "shinichi.takayanagi@gmail.com", "aut"))
 Title: Provides Access to Databases Through the ODBC Interface
@@ -12,9 +13,9 @@ Imports: methods, DBI, RIBMDB
 Collate: 'RODBCDBI.R' 'ODBCConnection.R' 'ODBCDriver.R' 'ODBCResult.R'
 RoxygenNote: 5.0.1
 NeedsCompilation: no
-Packaged: 2016-03-13 21:00:34 UTC; stakaya
-Author: Nagi Teramo [aut, cre],
+Packaged: 2020-04-06 13:36:34 IST; INDIA
+Author: Rocket Software [aut, cre], Nagi Teramo [aut, cre],
   Shinichi Takayanagi [aut]
-Maintainer: Nagi Teramo <teramonagi@gmail.com>
+Maintainer: Rocket Software <bkumar@rocketsoftware.com>
 Repository: CRAN
 Date/Publication: 2016-03-14 07:54:09
