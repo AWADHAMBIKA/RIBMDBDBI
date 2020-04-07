@@ -125,4 +125,4 @@ library(pool)
 
 ## Acknowledgements
 
-Many thanks to Brian D. Ripley, Michael Lapsley since This package is just a wrapper of [RODBC package](https://cran.r-project.org/package=RODBC). & Nagi Teramo(Since I used RODBCDBI as reference/base code) 
+Many thanks to Brian D. Ripley, Michael Lapsley since this package is a wrapper of RIBMDB package built on [RODBC package](https://cran.r-project.org/package=RODBC) & Nagi Teramo Since [RODBCDBI package] (https://cran.r-project.org/web/packages/RODBCDBI/index.html) is used as reference/base code.
