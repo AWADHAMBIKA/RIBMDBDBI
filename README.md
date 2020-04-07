@@ -29,7 +29,7 @@ This package is mainly for connection pooling support for RIBMDB in relation wit
 - https://www.rdocumentation.org/packages/pool/versions/0.1.4.3/topics/Pool
 - https://shiny.rstudio.com/articles/pool-basics.html
 
-### Example
+### Example - 1
 ```R
 #Load library
 library(DBI)
@@ -37,6 +37,8 @@ library(RIBMDBDBI)
 
 # At first, we make a sample table using RODBC package
 con <- dbConnect(RIBMDBDBI::ODBC(), dsn='test')
+(or)
+con <- dbConnect(RODBCDBI::ODBC(), 'DATABASE=foodb;hostname=bar.fly.com;PORT=12345;UID=foo;PWD=bar')
 
 #Show table lists
 dbListTables(con)
@@ -73,6 +75,42 @@ dbClearResult(res)
 
 # Disconnect from the database
 dbDisconnect(con)
+```
+### Example - 2
+
+```R
+# load pool Library
+library(pool)
+
+# Create pool object. This will give you a connection of pool to be used instead of individual connection.
+  pool <- dbPool(
+    drv = RODBCDBI::ODBC(),
+    dsn = 'DATABASE=foodb;hostname=bar.fly.com;PORT=12345;UID=foo;PWD=bar'
+  )
+  
+  (OR)
+  
+  pool <- dbPool(
+    drv = RODBCDBI::ODBC(),
+    dbname = "foodb",
+    host = "bar.fly.com",
+    port = 12345,
+    username = "foo",
+    password = "bar"
+  )
+  
+# Create table.
+  dbWriteTable(pool, "iris", iris, overwrite=TRUE)
+
+# Query Table  
+  dbGetQuery(pool, "SELECT * from priyankatestnew;")
+  
+# Drop Table
+  dbRemoveTable(pool, "iris")
+  
+# Close the pool once done.
+  poolClose(pool)
+
 ```
 
 ## Contributing
