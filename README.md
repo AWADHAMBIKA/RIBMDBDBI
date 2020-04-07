@@ -118,6 +118,11 @@ library(pool)
 
 ```
 
+## Un-Install
+
+To uninstall RIBMDBDBI package from your system, just delete the RIBMDBDBI directory from R home library.
+
+
 ## Contributing
 
 - Fork it ( https://github.com/AWADHAMBIKA/RIBMDBDBI/fork )
