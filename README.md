@@ -83,27 +83,21 @@ dbDisconnect(con)
 library(pool)
 
 # Create pool object. This will give you a connection of pool to be used instead of individual connection.
-  pool <- dbPool(
-    drv = RODBCDBI::ODBC(),
-    dsn = 'DATABASE=foodb;hostname=bar.fly.com;PORT=12345;UID=foo;PWD=bar'
-  )
-  
-  (OR)
-  
+ 
   pool <- dbPool(
     drv = RODBCDBI::ODBC(),
     dbname = "foodb",
-    host = "bar.fly.com",
-    port = 12345,
-    username = "foo",
-    password = "bar"
+    host = "foo.bar.com",
+    port = 60000,
+    user = "guest",
+    password = "guest"
   )
   
 # Create table.
   dbWriteTable(pool, "iris", iris, overwrite=TRUE)
 
 # Query Table  
-  dbGetQuery(pool, "SELECT * from priyankatestnew;")
+  dbGetQuery(pool, "SELECT * from iris;")
   
 # Drop Table
   dbRemoveTable(pool, "iris")

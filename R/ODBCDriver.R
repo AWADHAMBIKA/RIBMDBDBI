@@ -50,10 +50,11 @@ setMethod("dbUnloadDriver", "ODBCDriver", function(drv, ...) {TRUE})
 setMethod(
   "dbConnect", 
   "ODBCDriver", 
-  function(drv, dsn, user = NULL, password = NULL, ...){
+  function(drv, dbname,host,port, user = NULL, password = NULL, ...){
     uid <- if(is.null(user)) "" else user
     pwd <- if(is.null(password)) "" else password
-    connection <- odbcDriverConnect(dsn)
+    
+    connection <- odbcConnect(dbname,host,port, uid, pwd, ...)
     new("ODBCConnection", odbc=connection)
   }
 )
