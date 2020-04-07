@@ -36,9 +36,17 @@ library(DBI)
 library(RIBMDBDBI)
 
 # At first, we make a sample table using RODBC package
-con <- dbConnect(RIBMDBDBI::ODBC(), dsn='test')
+con <- dbConnect(RODBCDBI::ODBC(), 'foodb','bar.fly.com',12345,'guest','guest')
 (or)
-con <- dbConnect(RODBCDBI::ODBC(), 'DATABASE=foodb;hostname=bar.fly.com;PORT=12345;UID=foo;PWD=bar')
+con <- function()
+{
+  dbname <- 'foodb'
+  host <- 'bar.fly.com'
+  port <- 12345
+  uid <- 'guest'
+  pwd <- 'guest'
+  dbConnect(RODBCDBI::ODBC(), dbname,host,port,uid,pwd)
+}
 
 #Show table lists
 dbListTables(con)
