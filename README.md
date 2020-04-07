@@ -1,6 +1,6 @@
 # RIBMDBDBI
 
-RIBMDBDBI is an DBI-compliant interface to ODBC database. It's a wrapper of RIBMDB package(Developed over RODBC package).
+RIBMDBDBI is an DBI-compliant interface to ODBC database. It's a wrapper of [RIBMDB](https://github.com/ibmdb/RIBMDB) package(Developed over RODBC package).
 
 ## Prerequisite
 
