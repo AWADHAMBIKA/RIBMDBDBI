@@ -22,6 +22,12 @@ The following links are useful to do that.
 - https://support.microsoft.com/en-us/kb/300596
 - https://drill.apache.org/docs/configuring-odbc-on-windows/
 
+### Context:
+This package is mainly for connection pooling support for RIBMDB in relation with "pool" package. Check below link for details:
+```
+https://db.rstudio.com/pool/
+```
+
 ### Example
 ```R
 #Load library
