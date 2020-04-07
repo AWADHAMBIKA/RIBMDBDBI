@@ -123,4 +123,4 @@ library(pool)
 
 ## Acknowledgements
 
-Many thanks to Brian D. Ripley, Michael Lapsley since This package is just a wrapper of [RODBC package](https://cran.r-project.org/package=RODBC).
+Many thanks to Brian D. Ripley, Michael Lapsley since This package is just a wrapper of [RODBC package](https://cran.r-project.org/package=RODBC). & Nagi Teramo(Since I used RODBCDBI as reference/base code) 
