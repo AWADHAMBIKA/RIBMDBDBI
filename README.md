@@ -24,9 +24,9 @@ The following links are useful to do that.
 
 ### Context:
 This package is mainly for connection pooling support for RIBMDB in relation with "pool" package. Check below link for details:
-```
+
 https://db.rstudio.com/pool/
-```
+
 
 ### Example
 ```R
