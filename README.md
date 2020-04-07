@@ -26,7 +26,8 @@ The following links are useful to do that.
 This package is mainly for connection pooling support for RIBMDB in relation with "pool" package. Check below link for details:
 
 https://db.rstudio.com/pool/
-
+https://www.rdocumentation.org/packages/pool/versions/0.1.4.3/topics/Pool
+https://shiny.rstudio.com/articles/pool-basics.html
 
 ### Example
 ```R
