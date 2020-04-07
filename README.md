@@ -10,13 +10,13 @@ RIBMDBDBI is an DBI-compliant interface to ODBC database. It's a wrapper of [RIB
 
 ## Installation
 
-RIBMDB isn't availbale in CRAN yet but you can get it from github at:
+RIBMDB isn't availbale at CRAN yet but one can get it from github at:
 
 ```
 https://github.com/ibmdb/RIBMDB
 ```
 
-RIBMDBDBI isn't available from CRAN yet. One can use this project to get the same.
+RIBMDBDBI isn't available at CRAN yet. One can use this project to use the same.
 
 ## Basic usage
 ### Before you start
