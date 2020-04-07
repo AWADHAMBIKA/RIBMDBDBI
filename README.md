@@ -2,13 +2,19 @@
 
 RIBMDBDBI is an DBI-compliant interface to ODBC database. It's a wrapper of RIBMDB package(Developed over RODBC package).
 
+## Prerequisite
+
+- **Recommended version of R is >= V3.X. to install `RIBMDB`.**
+
+- **The latest R version using which `RIBMDB` is tested: 3.6.1**
+
 ## Installation
 RIBMDB isn't availbale in CRAN yet but you can get it from github at:
-
 
 ```
 https://github.com/ibmdb/RIBMDB
 ```
+
 RIBMDBDBI isn't available from CRAN yet, but you can get it from github at:
 
 ```
