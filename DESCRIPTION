@@ -9,6 +9,7 @@ Title: Provides Access to Databases Through the ODBC Interface
 Description: An implementation of R's DBI interface using ODBC package as a
     back-end. This allows R to connect to any DBMS that has a ODBC driver.
 License: MIT + file LICENSE
+Depends: R (>= 3.0.0)
 Imports: methods, DBI, RIBMDB
 Collate: 'RODBCDBI.R' 'ODBCConnection.R' 'ODBCDriver.R' 'ODBCResult.R'
 RoxygenNote: 5.0.1
